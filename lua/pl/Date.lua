@@ -191,7 +191,7 @@ end
 -- @name Date:yday
 
 
-for _,c in ipairs{'year','month','day','hour','min','sec','yday'} do
+for _,c in ipairs{'year','month','day','hour','min','sec','yday', 'wday'} do
     Date[c] = function(self,val)
         if val then
             assert_arg(1,val,"number")
